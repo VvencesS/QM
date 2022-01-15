@@ -1,0 +1,155 @@
+---
+grails:
+  profile: web
+  codegen:
+    defaultPackage: qm
+  gorm:
+    reactor:
+      # Whether to translate GORM events into Reactor events
+      # Disabled by default for performance reasons
+      events: false
+info:
+  app:
+    name: '@info.app.name@'
+    version: '@info.app.version@'
+    grailsVersion: '@info.app.grailsVersion@'
+spring:
+  main:
+    banner-mode: "off"
+  groovy:
+    template:
+      check-template-location: false
+
+# Spring Actuator Endpoints are Disabled by Default
+endpoints:
+  enabled: false
+  jmx:
+    enabled: true
+
+guide:
+  languages:
+    - en
+    - vi
+---
+grails:
+  mime:
+    disable:
+      accept:
+        header:
+          userAgents:
+            - Gecko
+            - WebKit
+            - Presto
+            - Trident
+    types:
+      all: '*/*'
+      atom: application/atom+xml
+      css: text/css
+      csv: text/csv
+      form: application/x-www-form-urlencoded
+      html:
+        - text/html
+        - application/xhtml+xml
+      js: text/javascript
+      json:
+        - application/json
+        - text/json
+      multipartForm: multipart/form-data
+      pdf: application/pdf
+      rss: application/rss+xml
+      text: text/plain
+      hal:
+        - application/hal+json
+        - application/hal+xml
+      xml:
+        - text/xml
+        - application/xml
+  urlmapping:
+    cache:
+      maxsize: 1000
+  controllers:
+    defaultScope: singleton
+    upload:
+      maxFileSize: 300000000
+      maxRequestSize: 300000000
+  converters:
+    encoding: UTF-8
+  views:
+    default:
+      #codec none de khi render khong ma hoa cac ki tu dac biet
+      codec: none
+    gsp:
+      encoding: UTF-8
+      htmlcodec: xml
+      codecs:
+        #codec none de khi render khong ma hoa cac ki tu dac biet
+        expression: none # escapes values inside ${}
+        scriptlets: none # escapes output from scriptlets in GSPs
+        taglib: none # escapes output from taglibs
+        staticparts: none # escapes output from static template parts
+  #Spring Security Plugin Config
+  plugin:
+    springsecurity:
+      authority:
+        className: com.melanin.security.Role
+      requestMap:
+        className: com.melanin.security.RequestMap
+      securityConfigType:  Requestmap
+      logout:
+        postOnly: false
+      #        alwaysUseDefaultTargetUrl: true
+      adh:
+        errorPage: '/melanin/err_403'
+      auth:
+        loginFormUrl: '/melanin/login'
+      failureHandler:
+        defaultFailureUrl: '/melanin/login/?login_error=1'
+      successHandler:
+        defaultTargetUrl: '/melanin/switchDashboard'
+        alwaysUseDefault: true
+
+      userLookup:
+        userDomainClassName: com.melanin.security.User
+        authorityJoinClassName: com.melanin.security.UserRole
+      apf:
+        storeLastUsername: true
+      rejectIfNoRule: true
+      fii:
+        rejectPublicInvocations: false
+      rememberMe:
+        cookieName: 'qm_remember_me'
+        tokenValiditySeconds: 1209600
+        parameter: 'remember-me'
+  #        persistent: true
+
+  web:
+    disable:
+      multipart: false
+    databinding:
+      convertEmptyStringsToNull: false
+
+endpoints:
+  jmx:
+    unique-names: true
+---
+hibernate:
+  cache:
+    queries: false
+    use_second_level_cache: false
+    use_query_cache: false
+dataSource:
+  jmxExport: true
+  driverClassName: com.mysql.jdbc.Driver
+  pooled: true
+
+grails:
+  config:
+    locations:
+      - file:///C:/conf/qm-external-config.yml
+  logback:
+    groovy: logback.groovy
+
+#qm:
+#  config:
+#    test: 'Test'
+

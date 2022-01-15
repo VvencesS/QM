@@ -1,0 +1,81 @@
+h3, h2, h4 {
+    border-bottom: 0px !important;
+    font-weight: bold !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.li_tab.active {
+    border-top: 3px solid #393393 !important;
+}
+
+.nav-tabs > li.active > a {
+    color: #555 !important;
+    cursor: default !important;;
+    background-color: #fff !important;;
+    border: 1px solid #ddd !important;;
+    border-bottom-color: transparent !important;;
+}
+
+.active {
+    background-color: white !important;
+    color: #000000 !important;
+}
+
+td > .help-block{
+    display: unset;
+}
+
+@media (min-width: 1901px){
+    .search-ht{
+        width: 80% ;
+        position: relative;
+        left: 1%;
+        top: -10%;
+    }
+}
+
+@media (min-width: 1701px) and (max-width: 1900px){
+    .search-ht{
+        width: 80% ;
+        position: relative;
+        left: 1%;
+        top: -10%;
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1700px){
+    .search-ht{
+        width: 80% ;
+        position: relative;
+        left: 1%;
+        top: -15%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .search-ht{
+        width: 80% ;
+        position: relative;
+        left: 1%;
+        top: -20%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .search-ht{
+        width: 80% ;
+        position: relative;
+        left: 1%;
+        top: -25%;
+    }
+}
+
+@media (max-width: 991px) {
+    .search-ht{
+        width: 80% ;
+        position: relative;
+        left: 1%;
+        top: -60%;
+    }
+}

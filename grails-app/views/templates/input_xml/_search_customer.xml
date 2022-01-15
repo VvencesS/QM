@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:cic="http://www.endpoint.ws.h2h.cic.org.vn/cicqa">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cic:TimKiemKH>
+            <cic:TenKH>{TenKH}</cic:TenKH>
+            <cic:DiaChi>{DiaChi}</cic:DiaChi>
+            <cic:MaKH>{MaKH}</cic:MaKH>
+            <cic:MaCIC>{MaCIC}</cic:MaCIC>
+            <cic:MSThue>{MSThue}</cic:MSThue>
+            <cic:SoCMT>{SoCMT}</cic:SoCMT>
+            <cic:MaTCTD>{MaTCTD}</cic:MaTCTD>
+            <cic:LoaiKH>{LoaiKH}</cic:LoaiKH>
+            <cic:DKKD>{DKKD}</cic:DKKD>
+        </cic:TimKiemKH>
+    </soapenv:Body>
+</soapenv:Envelope>

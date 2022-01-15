@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:cic="http://www.endpoint.ws.h2h.cic.org.vn/cicqa">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cic:TepHoiTin>
+            <cic:MaSP>{MaSP}</cic:MaSP>
+            <cic:TenTep>{TenTep}</cic:TenTep>
+            <cic:NoiDungTep>
+                {NoiDungTep}
+            </cic:NoiDungTep>
+        </cic:TepHoiTin>
+    </soapenv:Body>
+</soapenv:Envelope>

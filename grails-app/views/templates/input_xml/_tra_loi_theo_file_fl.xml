@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cic="http://www.endpoint.ws.h2h.cic.org.vn/cicqa">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cic:TepVanTin>
+            <cic:TenTep>{TenTep}</cic:TenTep>
+        </cic:TepVanTin>
+    </soapenv:Body>
+</soapenv:Envelope>

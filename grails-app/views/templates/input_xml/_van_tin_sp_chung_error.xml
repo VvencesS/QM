@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:cic="http://www.endpoint.ws.h2h.cic.org.vn/cicqa">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cic:VanTinChung>
+            <cic:MaSP>S37</cic:MaSP>
+            <cic:dongthamso_tents="MaTCTD">201</cic:dongthamso_tents>
+            <cic:dongthamso_tents="MaCIC">2010506789</cic:dongthamso_tents>
+            <cic:dongthamso_tents="CMND">147879520</cic:dongthamso_tents>
+        </cic:VanTinChung>
+    </soapenv:Body>
+</soapenv:Envelope>

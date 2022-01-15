@@ -1,0 +1,8 @@
+@font-face {
+    src: url('http://localhost:8080/assets/fonts/fonts/ARIAL.TTF');
+    -fs-pdf-font-embed: embed;
+    -fs-pdf-font-encoding: cp1250;
+}
+body {
+    font-family: "Arial Unicode MS", Arial, sans-serif;
+}

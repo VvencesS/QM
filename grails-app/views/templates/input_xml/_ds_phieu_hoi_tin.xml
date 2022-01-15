@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cic="http://www.endpoint.ws.h2h.cic.org.vn/cicqa">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cic:VanTin>
+            <cic:NgayHT>{NgayHT}</cic:NgayHT>
+            <cic:TrangThai>{TrangThai}</cic:TrangThai>
+        </cic:VanTin>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,50 @@
+.aligncenter { text-align: center }
+.alignright { text-align: right }
+
+.text-transform-capitalize { text-transform: capitalize!important }
+
+.vertical_align_top { vertical-align: top!important; }
+.vertical_align_middle { vertical-align: middle!important; }
+
+.mt5 { margin-top: 5px!important }
+.mt10 { margin-top: 10px!important }
+
+.w45 { width: 45px }
+.w60 { width: 60px }
+.w80 { width: 80px }
+.w100 { width: 100px }
+.w120 { width: 120px }
+.w140 { width: 140px }
+.w180 { width: 180px }
+.w200 { width: 200px }
+
+.ml5 { margin-left: 5px }
+.ml10 { margin-left: 10px }
+.ml15 { margin-left: 15px }
+.ml20 { margin-left: 20px }
+
+.mr5 { margin-right: 5px }
+.mr10 { margin-right: 10px }
+.mr15 { margin-right: 15px }
+
+.pl5 { padding-left: 5px }
+.pl10 { padding-left: 10px }
+.pl15 { padding-left: 15px }
+
+.pr5 { padding-right: 5px }
+.pr10 { padding-right: 10px }
+.pt30 { padding-top: 30px }
+
+.themes { width: 389px; margin: 0; padding: 0 }
+.themes li { list-style-type: none }
+.themes li a { float: left; margin: 0 10px 5px 0; padding: 0; width: 20px; height: 20px; border-radius: 4px } 
+
+/* HotFix For Pager C# */
+.pagination >  li > a.active {
+  background-color: #32434D;
+  color: #fff;
+  cursor: default;
+}
+
+.space15{margin-bottom: 15px;}
+

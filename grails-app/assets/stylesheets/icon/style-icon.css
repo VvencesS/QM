@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kzbz2v');
+  src:  url('fonts/icomoon.eot?kzbz2v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kzbz2v') format('truetype'),
+    url('fonts/icomoon.woff?kzbz2v') format('woff'),
+    url('fonts/icomoon.svg?kzbz2v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nguon-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e900";
+}
+.icon-nha-cung-cap:before {
+  font-family: 'icomoon';
+  content: "\e901";
+}
+.icon-tai-san-vat-tu:before {
+  font-family: 'icomoon';
+  content: "\e902";
+}
+.icon-vi-tri:before {
+  font-family: 'icomoon';
+  content: "\e903";
+}
+.icon-tai-khoan:before {
+  font-family: 'icomoon';
+  content: "\e904";
+}
+.icon-thue-xuat:before {
+  font-family: 'icomoon';
+  content: "\e905";
+}
+.icon-hop-dong:before {
+  font-family: 'icomoon';
+  content: "\e906";
+}
+.icon-nhom-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e907";
+}
+.icon-loai-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e908";
+}
+.icon-kho-hang:before {
+  font-family: 'icomoon';
+  content: "\e909";
+}
+.icon-nhan-vien:before {
+  font-family: 'icomoon';
+  content: "\e90a";
+}
+.icon-tinh-khau-hao:before {
+  font-family: 'icomoon';
+  content: "\e90b";
+}
+.icon-thanh-ly-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e90c";
+}
+.icon-thu-hoi-phieu:before {
+  font-family: 'icomoon';
+  content: "\e90d";
+}
+.icon-kiem-ke-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e90e";
+}
+.icon-nang-cap-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e90f";
+}
+.icon-thu-hoi-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e910";
+}
+.icon-chuyen-doi-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e911";
+}
+.icon-quan-ly-kho:before {
+  font-family: 'icomoon';
+  content: "\e912";
+}
+.icon-bao-cao-thong-ke:before {
+  font-family: 'icomoon';
+  content: "\e913";
+}
+.icon-quan-ly-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e914";
+}
+.icon-danh-muc-he-thong:before {
+  font-family: 'icomoon';
+  content: "\e915";
+}
+.icon-xuat-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e916";
+}
+.icon-nhap-tai-san:before {
+  font-family: 'icomoon';
+  content: "\e917";
+  size: 15px;
+}

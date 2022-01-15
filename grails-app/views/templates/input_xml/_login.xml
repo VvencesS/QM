@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cic="http://www.endpoint.ws.h2h.cic.org.vn/cicauthen">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cic:DangNhap>
+            <cic:TenDangNhap>{TenDangNhap}</cic:TenDangNhap>
+            <cic:MatKhau>{MatKhau}</cic:MatKhau>
+        </cic:DangNhap>
+    </soapenv:Body>
+</soapenv:Envelope>
