@@ -230,77 +230,11 @@
             $.ajax({
                 type: "GET",
                 async: false,
-                url: "${createLink(controller:'huanLuyenVaThucNghiem',action:'deleteLearnedData')}",
+                url: "${createLink(controller:'huanLuyenVaThucNghiem',action:'trainingBot')}",
                 success: function (data) {
                     common.showSpinner();
                     if (data?.result != null) {
                         common.showToastr('success', 'Thông báo', data?.result, 'toast-top-right');
-                        $.ajax({
-                            type: "GET",
-                            async: false,
-                            url: "${createLink(controller:'huanLuyenVaThucNghiem',action:'writeDataToFile')}",
-                            success: function (data) {
-                                common.showSpinner();
-                                if (data?.result != null) {
-                                    common.showToastr('success', 'Thông báo', data?.result, 'toast-top-right');
-                                    common.showToastr('success', 'Thông báo', 'Đang huấn luyện...!', 'toast-top-right');
-                                    $.ajax({
-                                        type: "GET",
-                                        async: false,
-                                        url: "${createLink(controller:'huanLuyenVaThucNghiem',action:'trainingBot')}",
-                                        success: function (data) {
-                                            common.showSpinner();
-                                            if (data?.result != null) {
-                                                common.showToastr('success', 'Thông báo', data?.result, 'toast-top-right');
-                                                setTimeout(function () {
-                                                    common.hideSpinner();
-                                                }, 300);
-                                            } else {
-                                                common.showToastr('error', 'Lỗi', data?.msg, 'toast-top-right');
-                                                setTimeout(function () {
-                                                    common.hideSpinner();
-                                                }, 300);
-                                            }
-                                        },
-                                        error: function (jqXHR, textStatus, errorThrown) {
-                                            common.hideSpinner();
-                                            if (textStatus === "timeout") {
-                                                jquery_alert('Thông báo', 'Kết nối quá hạn, xin vui lòng thực hiện lại hoặc đăng nhập lại tài khoản'); //Handle the timeout
-                                            } else {
-                                                common.hideSpinner();
-                                                if (jqXHR.status == '403') {
-                                                    common.showToastr('error', 'Lỗi', 'Bạn không có quyền thực hiện thao tác này!', 'toast-top-right');
-                                                } else {
-                                                    common.showToastr('error', 'Lỗi', errorThrown, 'toast-top-right');
-                                                }
-                                            }
-                                        }
-                                    });
-                                    setTimeout(function () {
-                                        common.hideSpinner();
-                                    }, 300);
-                                } else {
-                                    common.showToastr('error', 'Lỗi', 'Có lỗi xảy ra!', 'toast-top-right');
-                                    setTimeout(function () {
-                                        common.hideSpinner();
-                                    }, 300);
-                                }
-
-                            },
-                            error: function (jqXHR, textStatus, errorThrown) {
-                                common.hideSpinner();
-                                if (textStatus === "timeout") {
-                                    jquery_alert('Thông báo', 'Kết nối quá hạn, xin vui lòng thực hiện lại hoặc đăng nhập lại tài khoản'); //Handle the timeout
-                                } else {
-                                    common.hideSpinner();
-                                    if (jqXHR.status == '403') {
-                                        common.showToastr('error', 'Lỗi', 'Bạn không có quyền thực hiện thao tác này!', 'toast-top-right');
-                                    } else {
-                                        common.showToastr('error', 'Lỗi', errorThrown, 'toast-top-right');
-                                    }
-                                }
-                            }
-                        });
 
                         setTimeout(function () {
                             common.hideSpinner();

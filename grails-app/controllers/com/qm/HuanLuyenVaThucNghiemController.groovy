@@ -118,7 +118,15 @@ class HuanLuyenVaThucNghiemController {
         println "${actionUri}: " + new Date() + ": " + params
 
         try {
-            def result = restClientService.trainingBot()
+            def result = null
+            result = restClientService.deleteLearnedData()
+            if (result) {
+                def data = getDataForTraining()
+                result = restClientService.writeDataToFile(data)
+                if (result) {
+                    result = restClientService.trainingBot()
+                }
+            }
 
             render result as JSON
         } catch (Exception e) {
