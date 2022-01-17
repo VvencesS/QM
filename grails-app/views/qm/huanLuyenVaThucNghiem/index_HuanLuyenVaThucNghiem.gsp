@@ -226,6 +226,7 @@
         $("button[name=button-training-bot]").click(function (e) {
             e.preventDefault();
             $(":button:contains('OK')").attr('disabled', true);
+            common.showSpinner();
 
             $.ajax({
                 type: "GET",

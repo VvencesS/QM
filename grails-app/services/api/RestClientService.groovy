@@ -111,8 +111,6 @@ class RestClientService {
                     accept: ContentType.JSON,
                     query: [status: "00"],
                     headers: ["X-Foo": "bar"],
-                    connectTimeout: 60000,
-                    readTimeout: 60000,
                     followRedirects: false,
                     useCaches: false,
                     sslTrustAllCerts: true

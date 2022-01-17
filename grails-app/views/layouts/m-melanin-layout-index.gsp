@@ -11,7 +11,7 @@
 <!-- BEGIN HEADER -->
 <div class="header navbar navbar-inverse navbar-fixed-top">
 	<g:render  template="/templates/m-melanin-header"
-			   model="${[	logoURL:resource(dir:'images',file:'logo.png'),
+			   model="${[	logoURL:resource(dir:'images',file:'logomsb.png'),
 							 avatarURL:resource(dir:'images',file:'avatar.jpg'),
 							 menuTogglerURL:resource(dir:'images',file:'menu-toggler.png'),
 							 appDescriptions:grailsApplication.config.msb.platto.melanin.appDescription]}"/>

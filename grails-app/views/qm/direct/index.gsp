@@ -41,7 +41,7 @@
                 <div id="m-melanin-main-content" class="m-melanin-high-density">
                     <!-- CODE VÀO ĐÂY -->
                     <div align="center">
-                        <asset:image src="logomsb.png" style="width: 95%" class="img-responsive" id="m-melanin-logo2"/>
+                        <asset:image src="bg.jpg" style="width: 95%" class="img-responsive" id="m-melanin-logo2"/>
                     </div>
                 </div>
             </div>

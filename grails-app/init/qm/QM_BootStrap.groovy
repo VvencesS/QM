@@ -73,6 +73,9 @@ class QM_BootStrap {
         //['tên MODULE','Tên chức năng','Tên hành động','url']
         def dataUrl = [
                 ['TK', 'Thống kê', 'Chức năng Thống kê', '/thongKe/index_ThongKe'],
+                ['TK', 'Thống kê', 'Chức năng Thống kê', '/thongKe/mostAskedTopicChart'],
+                ['TK', 'Thống kê', 'Chức năng Thống kê', '/thongKe/foundResultsChart'],
+                ['TK', 'Thống kê', 'Chức năng Thống kê', '/thongKe/numberOfQuestionsInAPeriod'],
 
                 ['NHAN', 'Nhãn', 'Nhãn', '/nhan/index_Nhan'],
                 ['NHAN', 'Nhãn', 'Nhãn', '/nhan/layDivDMNhan'],
@@ -88,6 +91,10 @@ class QM_BootStrap {
                 ['CH_TL', 'Câu hỏi & trả lời', 'Chức năng Câu hỏi & trả lời', '/cauHoiVaTraLoi/importExcel'],
 
                 ['HUAN_LUYEN', 'Huấn luyện và thực nghiệm', 'Huấn luyện và thực nghiệm', '/HuanLuyenVaThucNghiem/index_HuanLuyenVaThucNghiem'],
+                ['HUAN_LUYEN', 'Huấn luyện và thực nghiệm', 'Huấn luyện và thực nghiệm', '/HuanLuyenVaThucNghiem/getBotResponse'],
+                ['HUAN_LUYEN', 'Huấn luyện và thực nghiệm', 'Huấn luyện và thực nghiệm', '/HuanLuyenVaThucNghiem/deleteLearnedData'],
+                ['HUAN_LUYEN', 'Huấn luyện và thực nghiệm', 'Huấn luyện và thực nghiệm', '/HuanLuyenVaThucNghiem/writeDataToFile'],
+                ['HUAN_LUYEN', 'Huấn luyện và thực nghiệm', 'Huấn luyện và thực nghiệm', '/HuanLuyenVaThucNghiem/trainingBot'],
 
         ]
 
